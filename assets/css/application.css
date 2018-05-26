@@ -1,0 +1,79 @@
+button {
+  width: 200px;
+  height: 200px;
+  background: none;
+  border: none;
+  cursor: pointer; }
+  button:focus {
+    outline: none; }
+  button.active .slice-1 {
+    animation-name: slice-1;
+    animation-duration: 2s; }
+  button.active .slice-2 {
+    animation-name: slice-2;
+    animation-duration: 1.75s;
+    animation-delay: 0.25s; }
+  button.active .slice-3 {
+    animation-name: slice-3;
+    animation-duration: 1.50s;
+    animation-delay: 0.5s; }
+  button.active .slice-4 {
+    animation-name: slice-4;
+    animation-duration: 1.25s;
+    animation-delay: 0.75s; }
+
+@keyframes slice-1 {
+  0% {
+    opacity: 1; }
+  6% {
+    opacity: 1; }
+  12% {
+    opacity: 0;
+    transform: translate(50px, -50px); }
+  90% {
+    opacity: 0;
+    transform: translate(50px, -50px); }
+  100% {
+    opacity: 1; } }
+
+@keyframes slice-2 {
+  0% {
+    opacity: 1; }
+  6% {
+    opacity: 1; }
+  12% {
+    opacity: 0;
+    transform: translate(50px, 50px); }
+  90% {
+    opacity: 0;
+    transform: translate(50px, 50px); }
+  100% {
+    opacity: 1; } }
+
+@keyframes slice-3 {
+  0% {
+    opacity: 1; }
+  6% {
+    opacity: 1; }
+  12% {
+    opacity: 0;
+    transform: translate(-50px, 50px); }
+  90% {
+    opacity: 0;
+    transform: translate(-50px, 50px); }
+  100% {
+    opacity: 1; } }
+
+@keyframes slice-4 {
+  0% {
+    opacity: 1; }
+  6% {
+    opacity: 1; }
+  12% {
+    opacity: 0;
+    transform: translate(-50px, -50px); }
+  90% {
+    opacity: 0;
+    transform: translate(-50px, -50px); }
+  100% {
+    opacity: 1; } }
