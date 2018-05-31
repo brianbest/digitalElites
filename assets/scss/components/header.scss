@@ -1,13 +1,19 @@
-.site-header{
-  background:black;
+.site-header {
   display: grid;
   grid-template-columns: auto auto auto 445px;
-  padding: 0 40px;
+  position: fixed;
+  max-width: 100%;
+  width: 100%;
+  z-index: 10;
+  padding: 81px 93px;
+  box-sizing: border-box;
+
   .header-logo {
-    background-image: url('/assets/images/logo.png');
+    background-image: url("/assets/images/logo.png");
     width: 160px;
     height: 68px;
   }
+
   .navigation {
     grid-column: 4;
     font-weight: 700;
@@ -23,11 +29,13 @@
       background: #fff;
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.26);
     }
+
     .navigation-item {
       display: inline-block;
       margin-right: 12px;
       padding: 10px 0;
-      &:last-child{
+
+      &:last-child {
         margin-right: 0;
       }
     }

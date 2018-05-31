@@ -19,10 +19,14 @@ button {
   padding: 8px 30px; }
 
 .site-header {
-  background: black;
   display: grid;
   grid-template-columns: auto auto auto 445px;
-  padding: 0 40px; }
+  position: fixed;
+  max-width: 100%;
+  width: 100%;
+  z-index: 10;
+  padding: 81px 93px;
+  box-sizing: border-box; }
   .site-header .header-logo {
     background-image: url("/assets/images/logo.png");
     width: 160px;
