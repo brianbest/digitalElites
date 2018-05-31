@@ -1,6 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
 body {
-  font-family: 'Lato', sans-serif; }
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  margin: 0; }
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 36px; }
+
+button {
+  background: #ffffff;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 5px solid #30343F;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 100px;
+  padding: 8px 30px; }
 
 .site-header {
   background: black;
@@ -35,20 +51,39 @@ body {
   width: 100%;
   min-height: 75vh;
   position: relative; }
+  .hero h2 {
+    color: #fff;
+    line-height: 0.7;
+    letter-spacing: 1px; }
+    .hero h2 b {
+      color: #30343F; }
+  .hero button {
+    font-size: 1em;
+    letter-spacing: 1.5px; }
   .hero .hero-image {
     position: absolute;
     z-index: 1;
     width: 100%;
-    height: 100%;
-    background: url("/assets/images/background_header.jpg");
-    background-size: cover; }
-    .hero .hero-image:before {
-      display: inline-block;
+    height: 100%; }
+    .hero .hero-image:before, .hero .hero-image:after {
+      position: absolute;
+      top: 0;
+      content: " ";
       width: 60%;
-      height: 100%;
+      height: 100%; }
+    .hero .hero-image:before {
+      left: 0;
       background: #DB5461;
-      clip-path: polygon(0 0, 80% 0%, 100% 100%, 0 100%);
-      content: " "; }
+      z-index: 2;
+      clip-path: polygon(0 0, 80% 0%, 100% 100%, 0 100%); }
+    .hero .hero-image:after {
+      background: url("/assets/images/background_header.jpg");
+      background-size: cover;
+      right: 0;
+      z-index: 1; }
   .hero .hero-content {
     position: absolute;
-    z-index: 2; }
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0px 93px; }
