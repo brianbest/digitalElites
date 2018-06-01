@@ -28,6 +28,9 @@
       content: " ";
       width: 60%;
       height: 100%;
+      @include breakpoint('tablet-and-smaller'){
+        width: 100%;
+      }
     }
 
     &:before {
@@ -35,6 +38,10 @@
       background: $pinkred;
       z-index: 2;
       clip-path: polygon(0 0, 80% 0%, 100% 100%, 0 100%);
+      @include breakpoint('tablet-and-smaller'){
+        clip-path: none;
+        opacity: 0.9;
+      }
     }
 
     &:after {
@@ -51,5 +58,12 @@
     top: 50%;
     transform: translateY(-50%);
     padding: 0px 93px;
+    @media screen and (max-width: 755px){
+      padding: 0px 30px;
+    }
+    @media screen and (max-width: 455px){
+      padding: 0 10px;
+      width: 100%;
+    }
   }
 }
