@@ -14,7 +14,7 @@
       grid-template-columns: auto auto auto ;
       width: 95%;
     }
-    @include breakpoint('mobile'){
+    @include breakpoint('tablet-and-smaller'){
       grid-template-columns: auto ;
     }
   }
@@ -26,10 +26,14 @@
       margin-bottom: 20px;
     }
 
-    @include breakpoint('mobile'){
+    @include breakpoint('tablet-and-smaller'){
       width: 320px;
       margin: 0 auto;
       margin-bottom: 40px;
+    }
+    @include breakpoint('mobile'){
+      width: 100%;
+
     }
     .icon {
 
